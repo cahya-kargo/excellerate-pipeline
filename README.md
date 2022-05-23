@@ -46,6 +46,7 @@ Your tasks are to create 2 pipelines that fulfill the following requirements. St
 4. Open a Pull Request from the new branch `pr-test` to `master`
 
 
-## for testting changes
+## For testing changes
 - test
 - test PR 1
+- test PR 2
