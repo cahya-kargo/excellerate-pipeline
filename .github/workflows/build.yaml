@@ -21,7 +21,5 @@ jobs:
       - name: Push docker image
         run: |
           echo ${{ secrets.CI_REGISTRY_PASSWORD }} | docker login --username ${{ secrets.CI_REGISTRY_USER }} --password-stdin
-          docker tag temp/build cahyakargo/kargo:latest
           docker tag temp/build cahyakargo/kargo:${{ github.sha }}
-          docker push cahyakargo/kargo:latest
           docker push cahyakargo/kargo:${{ github.sha }}
